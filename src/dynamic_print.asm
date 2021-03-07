@@ -9,10 +9,10 @@ main:
     push %rbp                   # prologue
     movq %rsp, %rbp             # prologue
 
-    movq $1, %rax           # 1 = write
-    movq $1, %rdi           # 1 = to stdout
-    movq $msg1, %rsi        # string ptr
-    movq $msg1_len, %rdx    # length
+    movq $1, %rax               # 1 = write
+    movq $1, %rdi               # 1 = to stdout
+    movq $msg1, %rsi            # string ptr
+    movq $msg1_len, %rdx        # length
     syscall
 
     pop %rbp                    # epilogue
