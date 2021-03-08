@@ -1,5 +1,5 @@
 .data
-    msg: .asciz "Hello, World\n"
+msg: .asciz "Hello, World\n"
 
 .text
 .globl main

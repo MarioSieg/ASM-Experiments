@@ -1,8 +1,8 @@
 .extern printf
 
 .data
-    x: .quad 0xABC
-    fmt: .asciz "X = %llx\n"
+x: .quad 0xABC
+fmt: .asciz "X = %llx\n"
 
 .text
 .globl main

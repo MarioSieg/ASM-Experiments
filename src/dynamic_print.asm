@@ -1,6 +1,6 @@
 .data 
-    msg1: .asciz "Ohohohohohohohooh!\n"
-    .equ msg1_len, .-msg1-1 # . = current address - address of msg1 minus 1 for null terminator
+msg1: .asciz "Ohohohohohohohooh!\n"
+.equ msg1_len, .-msg1-1 # . = current address - address of msg1 minus 1 for null terminator
 
 .text
 .globl main

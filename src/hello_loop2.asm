@@ -1,12 +1,12 @@
 .data
-    msg: .asciz "Hello, World\n"
+msg: .asciz "Hello, World\n"
 
 .text
 .globl main
 
 main:
-    movq $10, %rcx      # number of iterations
-    decq %rcx           # decrement because we test for zero so n - 1
+    movq $3, %rcx      # number of iterations
+
 L0:
     pushq %rcx          # preserve rcx
     movq $1, %rax       # 1 = write

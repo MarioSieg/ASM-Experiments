@@ -1,12 +1,12 @@
 .extern printf
 
 .data
-    msg: .asciz "Hey!"
-    fmt: .asciz "The string is: %s\n"
-    fmt2: .asciz "X is: %lld\n"
-    fmt3: .asciz "PI is: %f\n"
-    val: .quad 123456789
-    pi: .double 3.1415
+msg: .asciz "Hey!"
+fmt: .asciz "The string is: %s\n"
+fmt2: .asciz "X is: %lld\n"
+fmt3: .asciz "PI is: %f\n"
+val: .quad 123456789
+pi: .double 3.1415
 
 .text
 .globl main
