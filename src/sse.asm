@@ -26,7 +26,7 @@ main:
     movb $3, %al            # print 3 64-bit scalar doubles: xmm0-xmm2
     callq printf            # print
 
-    movss (pi), %xmm0       # load pi
+    movss pi, %xmm0       # load pi
     movss %xmm0, %xmm1      # copy 32-bit scalar from xmm0 to xmm1
     movss %xmm0, %xmm2      # copy 32-bit scalar from xmm0 to xmm2
     mulss %xmm2, %xmm2      # multiply 32-bit scalar from xmm2 with xmm2 and store in xmm2
@@ -39,7 +39,7 @@ main:
     movb $3, %al            # print 3 64-bit scalar doubles: xmm0-xmm2
     callq printf            # print
 
-    movss (pi), %xmm0       # load pi
+    movss pi, %xmm0       # load pi
     movss %xmm0, %xmm1      # copy 32-bit scalar from xmm0 to xmm1
     movss %xmm0, %xmm2      # copy 32-bit scalar from xmm0 to xmm2
     subss %xmm2, %xmm2      # multiply 32-bit scalar from xmm2 with xmm2 and store in xmm2
@@ -52,7 +52,7 @@ main:
     movb $3, %al            # print 3 64-bit scalar doubles: xmm0-xmm2
     callq printf            # print
 
-    movss (pi), %xmm0       # load pi
+    movss pi, %xmm0       # load pi
     movss %xmm0, %xmm1      # copy 32-bit scalar from xmm0 to xmm1
     movss %xmm0, %xmm2      # copy 32-bit scalar from xmm0 to xmm2
     divss %xmm2, %xmm2      # multiply 32-bit scalar from xmm2 with xmm2 and store in xmm2
